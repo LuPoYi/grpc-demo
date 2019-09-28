@@ -1,0 +1,25 @@
+syntax = "proto3";
+
+package demo;
+
+service DemoService {
+  rpc SayHello (HelloRequest) returns (HelloResponse);
+  rpc Sum (SumRequest) returns (SumResponse);
+}
+
+message HelloRequest {
+  string name = 1;
+}
+
+message HelloResponse {
+  string message = 1;
+}
+
+message SumRequest {
+  int64 numberOne = 1;
+  int64 numberTwo = 2;
+}
+
+message SumResponse {
+  int64 sum = 1;
+}
