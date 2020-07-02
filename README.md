@@ -1,5 +1,6 @@
 ### gRPC - go server & ruby client
 
+https://blog.poyi.tw/grpc-go-ruby/
 
 ```
 ├── go
